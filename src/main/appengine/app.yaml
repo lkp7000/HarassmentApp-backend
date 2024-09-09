@@ -1,0 +1,18 @@
+runtime: java17
+entrypoint: java -Xmx64m -jar harass-0.0.1-SNAPSHOT.jar
+env_variables:
+  CLOUD_SQL_CONNECTION_NAME: "fundevi:us-east1:fundeviid"
+  DB_NAME: "fondevi"
+  DB_USER: "fondeviUser"
+  DB_PASS: "Password"
+
+instance_class: F2
+
+handlers:
+  - url: /.*
+    script: this field is required, but ignored
+
+automatic_scaling:
+  target_cpu_utilization: 0.65
+  min_instances: 1
+  max_instances: 10

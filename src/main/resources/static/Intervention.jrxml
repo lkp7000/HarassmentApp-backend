@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0  -->
+<!-- 2021-09-14T12:14:18 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="intervention" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="432b7021-8c44-459d-a32f-0840e37b663d">
+    <field name="interventionId" class="java.lang.Long"/>
+    <field name="full_Name" class="java.lang.String"/>
+    <field name="email" class="java.lang.String"/>
+    <field name="phone_number" class="java.lang.String"/>
+    <field name="description" class="java.lang.String"/>
+    <field name="interventionName" class="java.lang.String"/>
+    <field name="intervention_date" class="java.time.LocalDate"/>
+
+    <field name="longitude" class="java.lang.String"/>
+    <field name="latitude" class="java.lang.String"/>
+    <columnHeader>
+        <band height="60" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="150" height="60" forecolor="#000000" uuid="d73fecdb-c31a-469a-a8f9-94ad1bea2c65"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="18" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="120" y="0" width="150" height="60" forecolor="#000000" uuid="95a01497-3c5f-4c05-850e-cdbd3a40f4b5"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="18" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Email]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="300" y="0" width="150" height="60" forecolor="#000000" uuid="95a01497-3c5f-4c05-850e-cdbd3a40f4b5"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="18" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Phone Number]]></text>
+            </staticText>
+
+            <staticText>
+                <reportElement x="600" y="0" width="150" height="60" forecolor="#000000" uuid="97cfd0be-6700-4c61-9574-c9ceb8f53f44"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="18" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Harraser Name]]></text>
+            </staticText>
+
+
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="125" splitType="Stretch">
+            <textField>
+                <reportElement x="20" y="0" width="150" height="125" forecolor="#000000" uuid="3ce98ed0-12d4-4f83-9f72-86c5af354813"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{full_Name}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="150" y="0" width="150" height="125" forecolor="#000000" uuid="3ce98ed0-12d4-4f83-9f72-86c5af354813"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="300" y="0" width="150" height="125" forecolor="#000000" uuid="3ce98ed0-12d4-4f83-9f72-86c5af354813"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{phone_number}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="600" y="0" width="150" height="125" forecolor="#000000" uuid="3ce98ed0-12d4-4f83-9f72-86c5af354813"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{interventionName}]]></textFieldExpression>
+            </textField>
+
+
+        </band>
+    </detail>
+</jasperReport>
